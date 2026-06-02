@@ -1,0 +1,123 @@
+:root {
+    --primary: #2ea44f;          /* Vert clair professionnel */
+    --primary-hover: #22863a;    /* Vert plus soutenu au survol */
+    --bg-header: #143424;        /* Vert bouteille très foncé pour le contraste pro */
+    --bg-page: #f4f9f5;          /* Fond de page très légèrement teinté vert clair */
+    --card-bg: #ffffff;
+    --text-main: #1c2d24;        /* Texte foncé tirant sur le vert */
+    --text-muted: #57655d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, var(--bg-header), #1e4631);
+    color: white;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.download-section {
+    background: var(--card-bg);
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(28, 45, 36, 0.05);
+    margin-bottom: 50px;
+    border: 1px solid #e1ebd3;
+}
+
+.download-section h2 {
+    margin-top: 0;
+    color: var(--bg-header);
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 16px 36px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 20px 0;
+    transition: background-color 0.2s ease;
+}
+
+.btn-download:hover {
+    background-color: var(--primary-hover);
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.features h2 {
+    font-size: 1.8rem;
+    color: var(--bg-header);
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 6px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(28, 45, 36, 0.04);
+    border-top: 4px solid var(--primary);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--bg-header);
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid #e1ebd3;
+}
