@@ -1,11 +1,12 @@
 :root {
-    --primary: #2ea44f;          /* Vert clair professionnel */
-    --primary-hover: #22863a;    /* Vert plus soutenu au survol */
-    --bg-header: #143424;        /* Vert bouteille très foncé pour le contraste pro */
-    --bg-page: #f4f9f5;          /* Fond de page très légèrement teinté vert clair */
+    --primary: #ff9f43;          /* Orange clair, doux et dynamique */
+    --primary-hover: #ff7f11;    /* Orange un peu plus soutenu pour le survol */
+    --bg-header: #2d3436;        /* Fond anthracite uni et sobre pour faire ressortir l'orange */
+    --bg-page: #fffbf7;          /* Fond de page très légèrement teinté orange/crème très clair */
     --card-bg: #ffffff;
-    --text-main: #1c2d24;        /* Texte foncé tirant sur le vert */
-    --text-muted: #57655d;
+    --text-main: #2d3436;        /* Texte principal foncé */
+    --text-muted: #5f27cd;       /* Couleur secondaire pour adoucir les paragraphes */
+    --text-card-muted: #57606f;  /* Gris neutre pour le texte des cartes */
 }
 
 body {
@@ -18,9 +19,10 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, var(--bg-header), #1e4631);
+    background-color: var(--bg-header);
     color: white;
     padding: 50px 20px;
+    border-bottom: 5px solid var(--primary); /* Ligne de séparation orange */
 }
 
 header h1 {
@@ -46,9 +48,9 @@ header p {
     background: var(--card-bg);
     padding: 40px 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(28, 45, 36, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     margin-bottom: 50px;
-    border: 1px solid #e1ebd3;
+    border: 1px solid #ffeaa7; /* Bordure très fine orange/jaune clair */
 }
 
 .download-section h2 {
@@ -66,7 +68,7 @@ header p {
     text-decoration: none;
     border-radius: 6px;
     margin: 20px 0;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btn-download:hover {
@@ -75,7 +77,7 @@ header p {
 
 .meta {
     font-size: 0.85rem;
-    color: var(--text-muted);
+    color: var(--text-card-muted);
     font-weight: 500;
 }
 
@@ -96,8 +98,8 @@ header p {
     padding: 25px;
     border-radius: 6px;
     text-align: left;
-    box-shadow: 0 2px 8px rgba(28, 45, 36, 0.04);
-    border-top: 4px solid var(--primary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    border-top: 4px solid var(--primary); /* Rappel de la couleur orange sur chaque case */
 }
 
 .card h3 {
@@ -111,13 +113,13 @@ header p {
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: var(--text-muted);
+    color: var(--text-card-muted);
 }
 
 footer {
     margin-top: 60px;
     padding: 30px 20px;
     font-size: 0.85rem;
-    color: var(--text-muted);
-    border-top: 1px solid #e1ebd3;
+    color: var(--text-card-muted);
+    border-top: 1px solid #ffeaa7;
 }
