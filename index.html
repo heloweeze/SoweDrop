@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoweDrop - Gestionnaire Documentaire Officiel</title>
-    <link rel="stylesheet" href="style.css">
+    <link class="js-meta-tags" rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Barre de navigation officielle -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#accueil" class="logo-text">SoweDrop</a>
+            <a href="#accueil" class="logo-text">
+                <img src="logo.png" alt="Mini Logo" class="nav-small-logo">
+                SoweDrop
+            </a>
             <div class="nav-links">
                 <a href="#accueil">Accueil</a>
                 <a href="#telechargement">Téléchargement</a>
@@ -21,21 +23,20 @@
         </div>
     </nav>
 
-    <!-- Onglet 1 : Accueil (Présentation & Spécifications) -->
-    <header id="accueil">
-        <div class="header-container">
-            <!-- EMPLACEMENT LOGO : Remplace logo_renard.png par le vrai nom de ton image -->
+    <header id="accueil" class="header-white-bg">
+        <div class="header-container-row">
             <div class="logo-wrapper">
                 <img src="logo.png" alt="Logo SoweDrop" class="app-logo">
             </div>
-            <h1>SoweDrop</h1>
-            <p>Simplifiez l'organisation et la gestion de vos fichiers au quotidien</p>
+            <div class="title-wrapper">
+                <h1>SoweDrop</h1>
+                <p>Simplifiez l'organisation et la gestion de vos fichiers au quotidien</p>
+            </div>
         </div>
     </header>
 
     <main class="container">
         
-        <!-- Section Spécifications (Intégrée à l'Accueil) -->
         <section class="features">
             <h2>Spécifications du produit</h2>
             <div class="grid">
@@ -68,80 +69,98 @@
 
         <hr class="separator">
 
-        <!-- Onglet 2 : Téléchargement de l'application -->
         <section id="telechargement" class="download-section">
             <h2>Téléchargement de l'application</h2>
             <p>Installez SoweDrop sur votre poste de travail pour commencer à organiser vos documents dès aujourd'hui.</p>
-            <a href="sowedrop_installer.exe" class="btn-download" download>Télécharger SoweDrop pour Windows</a>
-            <p class="meta">Disponible exclusivement pour Windows</p>
+            <a href="sowedrop_installer.exe" class="btn-download" download>Télécharger</a>
+            <p class="meta">Disponible pour Windows et Linux</p>
         </section>
 
         <hr class="separator">
 
-        <!-- Onglet 3 : Guide Utilisateur -->
         <section id="guide" class="user-guide">
             <h2>Guide Utilisateur SoweDrop</h2>
-            <p class="guide-intro">Ce guide d'accompagnement vous prend en main pas à pas pour vous aider à maîtriser l'ensemble des fonctionnalités de votre application.</p>
+            <p class="guide-intro">Ce guide d'accompagnement vous prend en main pas à pas pour vous aider à maîtriser l'ensemble des fonctionnalités de notre application.</p>
             
             <div class="guide-box">
+                
                 <div class="guide-step">
-                    <h3>1. Prise en main et démarrage</h3>
-                    <p>Dès l'ouverture de SoweDrop sur votre ordinateur, l'interface s'organise autour de quatre zones clés pensées pour votre confort :</p>
+                    <h3>Étape 1 : Installation et premier démarrage</h3>
+                    <div class="guide-image-container">
+                        <img src="etape1.png" alt="Capture d'écran - Installation et démarrage" class="guide-screenshot">
+                    </div>
                     <ul>
-                        <li><strong>En haut à gauche :</strong> L'espace complet dédié à vos critères de recherche.</li>
-                        <li><strong>Au centre de l'écran :</strong> Le tableau principal listant l'intégralité de vos documents.</li>
-                        <li><strong>À droite :</strong> Une fiche de résumé dynamique pour consulter le détail d'un document en un clin d'œil.</li>
-                        <li><strong>Boutons d'action :</strong> Des accès directs pour consulter ou enregistrer vos documents.</li>
+                        <li><strong>Téléchargement :</strong> Téléchargez le fichier d'installation depuis notre site web officiel.</li>
+                        <li><strong>Installation :</strong> Double-cliquez sur le fichier pour lancer l'installation automatique sur votre système.</li>
+                        <li><strong>Ouverture :</strong> Lancez l'application SoweDrop. L'interface principale s'ouvre sur votre écran, prête à l'emploi.</li>
                     </ul>
                 </div>
 
                 <div class="guide-step">
-                    <h3>2. Rechercher efficacement un document</h3>
-                    <p>Pour filtrer et trouver un document précis, renseignez une ou plusieurs informations dans la zone de recherche :</p>
+                    <h3>Étape 2 : Découverte du tableau de bord initial</h3>
+                    <div class="guide-image-container">
+                        <img src="etape2.png" alt="Capture d'écran - Tableau de bord initial" class="guide-screenshot">
+                    </div>
+                    <p>Lorsque vous vous connectez pour la première fois, votre tableau de bord central est totalement vide. Dès l'ouverture, vous pouvez valider les fenêtres d'accueil avec la touche <b>Entrée</b> pour accéder pleinement à l'espace.</p>
+                </div>
+
+                <div class="guide-step">
+                    <h3>Étape 4 : Prise en main des fonctionnalités clés</h3>
+                    
+                    <h4>A. Ajouter et supprimer un document</h4>
+                    <div class="guide-image-container">
+                        <img src="etape4a.png" alt="Capture d'écran - Ajouter et supprimer" class="guide-screenshot">
+                    </div>
                     <ul>
-                        <li><strong>Titre ou Auteur :</strong> Saisissez une partie du nom recherché.</li>
-                        <li><strong>Mots-clés :</strong> Saisissez vos mots séparés par des virgules.</li>
-                        <li><strong>Catégories :</strong> Cochez simplement la ou les cases correspondantes (ex: <em>Rapport</em>, <em>Finance</em>).</li>
-                        <li><strong>Dates :</strong> Encadrez votre recherche en sélectionnant une période précise.</li>
+                        <li><strong>Importer un document :</strong> Cliquez sur le menu « Importer ». Un formulaire guidé s'ouvre : renseignez le titre, l'auteur, les mots-clés ainsi que la description, puis sélectionnez le fichier sur votre ordinateur. <br>💡 <b>Raccourci clavier :</b> <kbd>Ctrl + O</kbd></li>
+                        <li><strong>Supprimer un document :</strong> Sélectionnez une ligne dans votre tableau et demandez la suppression. Grâce à notre système de corbeille intégrée, le document est masqué de vos recherches mais reste protégé contre les fausses manipulations. <br>💡 <b>Raccourci clavier :</b> <kbd>Ctrl + D</kbd></li>
                     </ul>
-                    <p>Cliquez sur <strong>Rechercher</strong> pour appliquer les filtres. Si vous laissez les champs vides, tous vos documents s'afficheront.</p>
-                </div>
 
-                <div class="guide-step">
-                    <h3>3. Comprendre le système de tris et filtres</h3>
-                    <p><strong>Cumul des critères :</strong> Quand vous remplissez plusieurs champs à la fois, SoweDrop applique un croisement strict. Par exemple, si vous cherchez l'auteur "Fabien" et la catégorie "Rapport", l'application affichera exclusivement les rapports rédigés par Fabien.</p>
-                    <p><strong>Organisation de l'affichage :</strong> Deux menus déroulants vous permettent de classer vos résultats par Date, Titre ou Auteur, en ordre Croissant ou Décroissant. Par défaut, vos fichiers les plus récents apparaîtront toujours au sommet de la liste.</p>
-                    <p><strong>Remise à zéro :</strong> Le bouton <strong>Réinitialiser</strong> vous permet d'effacer d'un seul clic tous vos filtres en cours et de retrouver instantanément la liste complète de vos documents.</p>
-                </div>
-
-                <div class="guide-step">
-                    <h3>4. Consulter, ouvrir et exporter un fichier</h3>
-                    <p>Sélectionnez simplement une ligne dans votre tableau central pour activer les fonctionnalités :</p>
+                    <h4>B. Rechercher efficacement avec la multicritères</h4>
+                    <div class="guide-image-container">
+                        <img src="etape4b.png" alt="Capture d'écran - Barre de recherche multicritères" class="guide-screenshot">
+                    </div>
+                    <p>La barre supérieure de l'application vous permet de filtrer très précisément vos documents mais aussi des petites fonctionnalités :</p>
                     <ul>
-                        <li><strong>Le panneau latéral :</strong> Il charge immédiatement toutes les informations utiles (titre, auteur, date, catégorie, mots-clés et description personnalisée).</li>
-                        <li><strong>Le bouton Ouvrir :</strong> Il lance directement la lecture de votre fichier en utilisant l'application par défaut installée sur votre système Windows (comme votre lecteur PDF ou Word).</li>
-                        <li><strong>Le bouton Télécharger :</strong> Il effectue une copie locale sécurisée de votre fichier directement dans le dossier de votre choix sur votre ordinateur.</li>
+                        <li><strong>Recherche par texte :</strong> Filtrez instantanément par le Titre, l'Auteur ou par Catégories.</li>
+                        <li><strong>Recherche par date :</strong> Encadrez vos documents en définissant une Date minimale et même une Date maximale.</li>
+                        <li><strong>Système de tri :</strong> Organisez l'affichage en choisissant votre axe (Trier par Titre, Date ou Auteur) ainsi que le sens (Ordre Croissant ou Décroissant).</li>
+                        <li><strong>Bouton RECHERCHER :</strong> Applique l'ensemble de vos critères et affiche les documents correspondants.</li>
+                        <li><strong>Bouton RÉINITIALISER :</strong> Vide instantanément tous les filtres saisis pour vider l'affichage lourd et réafficher la totalité de vos documents dans un format visuel léger. <br>💡 <b>Raccourci clavier :</b> <kbd>Entrée</kbd></li>
+                        <li><strong>Bouton Synchronisation :</strong> Après avoir importé ou supprimé un document, la fonctionnalité synchronisée permet de coordonner les documents partagés. <br>💡 <b>Raccourci clavier :</b> <kbd>Ctrl + R</kbd></li>
                     </ul>
-                </div>
 
-                <div class="guide-step">
-                    <h3>5. Ajouter et supprimer des documents</h3>
-                    <p><strong>Ajouter un fichier :</strong> Cliquez sur le menu <strong>Importer</strong>. Remplissez le formulaire guidé (titre, auteur, date, catégories et description) puis sélectionnez le fichier sur votre disque. SoweDrop se charge de le copier proprement dans votre stockage d'application et de l'ajouter au tableau.</p>
-                    <p><strong>Supprimer en toute sécurité :</strong> Via le menu <strong>Édition > Supprimer un document</strong>, retirez un fichier après une simple confirmation. Grâce à notre système de corbeille intégrée, la suppression cache le document de vos recherches courantes tout en évitant les pertes définitives suite à une fausse manipulation.</p>
+                    <h4>C. Consulter, ouvrir et exporter un document</h4>
+                    <div class="guide-image-container">
+                        <img src="etape4c.png" alt="Capture d'écran - Consultation et export" class="guide-screenshot">
+                    </div>
+                    <p>Faites un simple clic sur un document dans le tableau pour interagir avec lui :</p>
+                    <ul>
+                        <li><strong>Ouvrir le document :</strong> Lance instantanément la lecture de votre fichier en utilisant l'application par défaut installée sur votre bureau (votre lecteur PDF habituel, Word, etc.).</li>
+                        <li><strong>Télécharger :</strong> Effectue une copie locale de sécurité du fichier physique directement dans le dossier de votre choix sur votre ordinateur.</li>
+                        <li><strong>Copier le chemin de la ressource :</strong> Permet de copier instantanément le chemin d'accès absolu du fichier dans votre presse-papiers.</li>
+                    </ul>
+
+                    <h4>D. Confort visuel et assistance</h4>
+                    <div class="guide-image-container">
+                        <img src="etape4d.png" alt="Capture d'écran - Modes de couleur" class="guide-screenshot">
+                    </div>
+                    <ul>
+                        <li><strong>Préférences de couleurs :</strong> Adaptez l'application à la luminosité de votre bureau. Basculez instantanément entre le Mode Clair et le Mode Sombre. <br>💡 <b>Raccourci clavier :</b> <kbd>Ctrl + P</kbd></li>
+                        <li><strong>Onglet Contact & Support :</strong> Un espace dédié au sein de l'application contient les informations de support et le lien vers le site web officiel.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <hr class="separator">
 
-        <!-- Onglet 4 : Contact -->
         <section id="contact" class="contact-section">
             <h2>Contactez l'équipe SoweDrop</h2>
             <p>Une question ou un besoin d'assistance concernant l'application ? Notre équipe est à votre écoute.</p>
             <div class="contact-box">
                 <p><strong>Support Officiel :</strong> support@sowedrop.com</p>
-                <p><strong>Horaires d'assistance :</strong> Du lundi au vendredi, de 8h00 à 17h00</p>
-                <p class="contact-note">Pour toute demande technique, merci de préciser la version de votre système Windows.</p>
+                <p><strong>Version de l'application :</strong> V1, 03/06/2026</p>
             </div>
         </section>
 
