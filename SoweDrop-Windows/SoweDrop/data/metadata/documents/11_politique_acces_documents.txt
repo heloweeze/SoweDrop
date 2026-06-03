@@ -1,0 +1,13 @@
+idDoc: 11
+titre: Politique acces documents
+description: Regles fictives pour acceder aux documents.
+auteur_nom: AMOURANI
+auteur_prenom: Fabien
+auteur_matricule: RT002
+date_document: 2026-04-16
+ressource: data/documents/partage/politique_acces_documents.pdf
+type_fichier: PDF
+stockage: partage
+statut: actif
+categories: Securite;Procedure
+mots_cles: acces;droits;documents

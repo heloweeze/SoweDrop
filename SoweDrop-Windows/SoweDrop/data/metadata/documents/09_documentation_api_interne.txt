@@ -1,0 +1,13 @@
+idDoc: 9
+titre: Documentation API interne
+description: Documentation exemple pour une API interne.
+auteur_nom: FILAUMART
+auteur_prenom: Heloise
+auteur_matricule: RT004
+date_document: 2026-04-14
+ressource: data/documents/partage/documentation_api_interne.docx
+type_fichier: DOCX
+stockage: partage
+statut: actif
+categories: Documentation;Technique
+mots_cles: api;documentation;interne

@@ -1,0 +1,13 @@
+idDoc: 12
+titre: Bilan mensuel avril
+description: Bilan mensuel fictif du projet SAE.
+auteur_nom: BADOR
+auteur_prenom: Manon
+auteur_matricule: RT003
+date_document: 2026-04-18
+ressource: data/documents/partage/bilan_mensuel_avril.docx
+type_fichier: DOCX
+stockage: partage
+statut: actif
+categories: Rapport;Projet
+mots_cles: bilan;avril;sae203

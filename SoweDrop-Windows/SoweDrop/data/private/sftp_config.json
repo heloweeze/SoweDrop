@@ -1,0 +1,7 @@
+{
+  "host": "51.210.247.212",
+  "port": 22,
+  "username": "user1",
+  "password": "test",
+  "remote_base": "/commun"
+}

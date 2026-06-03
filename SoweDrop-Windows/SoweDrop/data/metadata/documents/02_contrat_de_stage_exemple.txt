@@ -1,0 +1,13 @@
+idDoc: 2
+titre: Contrat de stage - exemple
+description: Modele de contrat utilise pour les tests.
+auteur_nom: MOUNIAMA
+auteur_prenom: Lucas
+auteur_matricule: RT001
+date_document: 2026-04-03
+ressource: data/documents/local/contrat_de_stage_exemple.pdf
+type_fichier: PDF
+stockage: local
+statut: actif
+categories: RH
+mots_cles: contrat;stage;confidentiel

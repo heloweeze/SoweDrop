@@ -1,0 +1,13 @@
+idDoc: 5
+titre: Procedure sauvegarde locale
+description: Procedure de sauvegarde pour les fichiers locaux.
+auteur_nom: FILAUMART
+auteur_prenom: Heloise
+auteur_matricule: RT004
+date_document: 2026-04-09
+ressource: data/documents/partage/procedure_sauvegarde_locale.pdf
+type_fichier: PDF
+stockage: partage
+statut: actif
+categories: Procedure;Admin
+mots_cles: sauvegarde;local;securite

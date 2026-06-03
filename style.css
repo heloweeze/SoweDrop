@@ -147,33 +147,21 @@ header p {
 }
 
 /* Section Téléchargement */
-.download-section h2 {
-    font-size: 1.8rem;
-    color: var(--bg-header);
-    margin-top: 0;
-}
-
-.btn-download {
-    display: inline-block;
-    background-color: var(--primary);
-    color: white;
-    padding: 16px 36px;
-    font-size: 1.15rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 6px;
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les deux boutons */
     margin: 20px 0;
-    transition: background-color 0.2s ease;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur petit écran */
 }
 
-.btn-download:hover {
-    background-color: var(--primary-hover);
+/* Optionnel : Si tu veux nuancer la couleur du bouton Linux pour les différencier */
+.btn-linux {
+    background-color: #57606f; /* Un gris anthracite pro qui va très bien avec le orange */
 }
 
-.meta {
-    font-size: 0.85rem;
-    color: var(--text-card-muted);
-    font-weight: 500;
+.btn-linux:hover {
+    background-color: #2d3436;
 }
 
 /* Guide Utilisateur */
