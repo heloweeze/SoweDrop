@@ -1,12 +1,16 @@
 :root {
-    --primary: #ff9f43;          /* Orange clair, doux et dynamique */
-    --primary-hover: #ff7f11;    /* Orange un peu plus soutenu pour le survol */
-    --bg-header: #2d3436;        /* Fond anthracite uni et sobre pour faire ressortir l'orange */
-    --bg-page: #fffbf7;          /* Fond de page très légèrement teinté orange/crème très clair */
+    --primary: #ff9f43;          /* Orange clair pro */
+    --primary-hover: #ff7f11;    /* Orange au survol */
+    --bg-header: #2d3436;        /* Gris anthracite pro */
+    --bg-page: #fffbf7;          /* Fond de page doux crème/orange très léger */
     --card-bg: #ffffff;
-    --text-main: #2d3436;        /* Texte principal foncé */
-    --text-muted: #5f27cd;       /* Couleur secondaire pour adoucir les paragraphes */
-    --text-card-muted: #57606f;  /* Gris neutre pour le texte des cartes */
+    --text-main: #2d3436;        /* Texte principal */
+    --text-card-muted: #57606f;  /* Gris pour les descriptions */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Aligne parfaitement les sections lors du clic sur le menu */
 }
 
 body {
@@ -18,23 +22,78 @@ body {
     text-align: center;
 }
 
+/* Barre de navigation fixe */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-header);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.navbar .logo-text {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links a {
+    color: #dfdfdf;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Header & Logo principal */
 header {
     background-color: var(--bg-header);
     color: white;
-    padding: 50px 20px;
-    border-bottom: 5px solid var(--primary); /* Ligne de séparation orange */
+    padding: 110px 20px 60px 20px;
+    border-bottom: 5px solid var(--primary);
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo-wrapper {
+    margin-bottom: 20px;
+}
+
+.app-logo {
+    max-width: 150px; /* Taille parfaite pour ton logo renard */
+    height: auto;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
 }
 
 header p {
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     opacity: 0.9;
 }
 
@@ -44,44 +103,8 @@ header p {
     padding: 40px 20px;
 }
 
-.download-section {
-    background: var(--card-bg);
-    padding: 40px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-    margin-bottom: 50px;
-    border: 1px solid #ffeaa7; /* Bordure très fine orange/jaune clair */
-}
-
-.download-section h2 {
-    margin-top: 0;
-    color: var(--bg-header);
-}
-
-.btn-download {
-    display: inline-block;
-    background-color: var(--primary);
-    color: white;
-    padding: 16px 36px;
-    font-size: 1.15rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 6px;
-    margin: 20px 0;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.btn-download:hover {
-    background-color: var(--primary-hover);
-}
-
-.meta {
-    font-size: 0.85rem;
-    color: var(--text-card-muted);
-    font-weight: 500;
-}
-
-.features h2 {
+/* Grille Spécifications (Accueil) */
+.features h2, .contact-section h2 {
     font-size: 1.8rem;
     color: var(--bg-header);
     margin-bottom: 30px;
@@ -99,7 +122,7 @@ header p {
     border-radius: 6px;
     text-align: left;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-    border-top: 4px solid var(--primary); /* Rappel de la couleur orange sur chaque case */
+    border-top: 4px solid var(--primary);
 }
 
 .card h3 {
@@ -116,8 +139,132 @@ header p {
     color: var(--text-card-muted);
 }
 
+.separator {
+    border: 0;
+    height: 1px;
+    background: #ffeaa7;
+    margin: 60px 0;
+}
+
+/* Section Téléchargement */
+.download-section h2 {
+    font-size: 1.8rem;
+    color: var(--bg-header);
+    margin-top: 0;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 16px 36px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 20px 0;
+    transition: background-color 0.2s ease;
+}
+
+.btn-download:hover {
+    background-color: var(--primary-hover);
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: var(--text-card-muted);
+    font-weight: 500;
+}
+
+/* Guide Utilisateur */
+.user-guide {
+    text-align: left;
+}
+
+.user-guide h2 {
+    font-size: 1.8rem;
+    color: var(--bg-header);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.guide-intro {
+    text-align: center;
+    color: var(--text-card-muted);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.guide-box {
+    background: var(--card-bg);
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    border: 1px solid #ffeaa7;
+}
+
+.guide-step {
+    padding: 30px 0;
+    border-bottom: 1px solid #f1f2f6;
+}
+
+.guide-step:last-child {
+    border-bottom: none;
+}
+
+.guide-step h3 {
+    margin-top: 0;
+    color: var(--bg-header);
+    font-size: 1.4rem;
+    border-left: 4px solid var(--primary);
+    padding-left: 12px;
+}
+
+.guide-step p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.guide-step ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.guide-step li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-card-muted);
+    margin-bottom: 8px;
+}
+
+/* Section Contact */
+.contact-box {
+    background: var(--card-bg);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    border: 1px solid #ffeaa7;
+    text-align: left;
+}
+
+.contact-box p {
+    margin: 10px 0;
+    font-size: 1.05rem;
+}
+
+.contact-note {
+    font-size: 0.9rem;
+    color: var(--text-card-muted);
+    border-top: 1px solid #f1f2f6;
+    padding-top: 15px;
+    margin-top: 15px !important;
+}
+
+/* Footer */
 footer {
-    margin-top: 60px;
+    margin-top: 80px;
     padding: 30px 20px;
     font-size: 0.85rem;
     color: var(--text-card-muted);
