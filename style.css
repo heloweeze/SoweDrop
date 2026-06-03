@@ -224,8 +224,7 @@ header p {
     color: var(--text-card-muted);
     margin-bottom: 8px;
 }
-
-/* Style simple pour le bouton PDF */
+/* Style ultra simple pour le bouton PDF */
 .pdf-download-container {
     text-align: center;
     margin: 30px 0;
