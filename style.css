@@ -1,20 +1,24 @@
-/* Alignement du logo et du titre côte à côte */
-.header-white-bg {
+/* Fond blanc général pour le corps du site et l'en-tête */
+body {
     background-color: #ffffff;
-    color: #333333;
+    color: #8b8787;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff; /* Assure le fond blanc derrière le grand renard */
+    text-align: center;
     padding: 40px 20px;
 }
 
-.header-container-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px; /* Espace entre le logo et le titre */
-    max-width: 1200px;
-    margin: 0 auto;
+.app-logo {
+    max-width: 400px; /* Redimensionne le grand renard si nécessaire */
+    height: auto;
+    margin-bottom: 20px;
 }
 
-/* Ajustement du petit logo dans la navbar */
+/* Alignement du mini logo dans la barre de navigation */
 .logo-text {
     display: flex;
     align-items: center;
@@ -22,13 +26,13 @@
 }
 
 .nav-small-logo {
-    height: 30px; /* Taille du mini logo */
+    height: 24px; /* Petit logo discret dans la barre */
     width: auto;
 }
 
-/* Style pour les captures d'écran du guide */
+/* Conteneur et style des captures d'écran du guide */
 .guide-image-container {
-    margin: 15px 0;
+    margin: 20px 0;
     text-align: left;
 }
 
@@ -36,6 +40,33 @@
     max-width: 100%;
     height: auto;
     border-radius: 6px;
-    border: 1px solid #ddd; /* Petit cadre gris propre autour de la capture */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Style pour le conteneur du bouton PDF */
+.pdf-download-container {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+/* Style du bouton de téléchargement PDF */
+.btn-pdf-download {
+    display: inline-block;
+    background-color: #e08b4f; /* Une couleur rouge/corail élégante pour rappeler le PDF */
+    color: #ffffff !important;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet au survol du bouton */
+.btn-pdf-download:hover {
+    background-color: #e08b4f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
