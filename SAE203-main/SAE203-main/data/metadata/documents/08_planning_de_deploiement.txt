@@ -1,0 +1,13 @@
+idDoc: 8
+titre: Planning de deploiement
+description: Planning fictif des etapes de deploiement.
+auteur_nom: BADOR
+auteur_prenom: Manon
+auteur_matricule: RT003
+date_document: 2026-04-12
+ressource: data/documents/partage/planning_de_deploiement.xlsx
+type_fichier: XLSX
+stockage: partage
+statut: actif
+categories: Projet;Planning
+mots_cles: planning;deploiement;jalons

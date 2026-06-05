@@ -1,0 +1,13 @@
+idDoc: 1
+titre: Projet SAE 2.03 - Note de cadrage
+description: Document de cadrage initial du projet documentaire.
+auteur_nom: MOUNIAMA
+auteur_prenom: Lucas
+auteur_matricule: RT001
+date_document: 2026-04-01
+ressource: data/documents/partage/projet_sae_2_03_note_de_cadrage.pdf
+type_fichier: PDF
+stockage: partage
+statut: actif
+categories: Projet;Technique
+mots_cles: sae203;cadrage;prioritaire

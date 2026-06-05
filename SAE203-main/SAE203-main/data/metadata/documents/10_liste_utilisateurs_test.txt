@@ -1,0 +1,13 @@
+idDoc: 10
+titre: Liste utilisateurs test
+description: Liste fictive des utilisateurs de test.
+auteur_nom: MOUNIAMA
+auteur_prenom: Lucas
+auteur_matricule: RT001
+date_document: 2026-04-15
+ressource: data/documents/local/liste_utilisateurs_test.xlsx
+type_fichier: XLSX
+stockage: local
+statut: actif
+categories: Admin
+mots_cles: utilisateurs;test;matricule

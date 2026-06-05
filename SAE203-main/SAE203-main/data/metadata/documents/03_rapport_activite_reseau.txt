@@ -1,0 +1,13 @@
+idDoc: 3
+titre: Rapport activite reseau
+description: Rapport fictif sur les activites reseau de la semaine.
+auteur_nom: AMOURANI
+auteur_prenom: Fabien
+auteur_matricule: RT002
+date_document: 2026-04-05
+ressource: data/documents/partage/rapport_activite_reseau.docx
+type_fichier: DOCX
+stockage: partage
+statut: actif
+categories: Rapport;Technique
+mots_cles: reseau;rapport;hebdomadaire

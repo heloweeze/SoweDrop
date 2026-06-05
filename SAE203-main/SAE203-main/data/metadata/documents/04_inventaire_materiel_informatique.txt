@@ -1,0 +1,13 @@
+idDoc: 4
+titre: Inventaire materiel informatique
+description: Tableau fictif des postes et equipements.
+auteur_nom: BADOR
+auteur_prenom: Manon
+auteur_matricule: RT003
+date_document: 2026-04-07
+ressource: data/documents/partage/inventaire_materiel_informatique.xlsx
+type_fichier: XLSX
+stockage: partage
+statut: actif
+categories: Inventaire;Technique
+mots_cles: materiel;inventaire;stock

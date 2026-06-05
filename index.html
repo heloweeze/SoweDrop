@@ -22,7 +22,7 @@
     </nav>
 
     <!-- Accueil -->
-    <header id="accueil">
+    <header id="accueil" class="hero">
         <div class="header-container">
             <div class="logo-wrapper">
                 <img src="logo.png" alt="Logo SoweDrop" class="app-logo">
@@ -35,7 +35,7 @@
     <main class="container">
         
         <!-- Section Spécifications -->
-        <section class="features">
+        <section class="features reveal">
             <h2>Spécifications du produit</h2>
             <div class="grid">
                 <div class="card">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="card">
                     <h3>Ergonomie et gain de temps</h3>
-                    <p>Une interface épurée pensée pour l'efficacité. Trouvez, consultez et ouvrez vos fichiers instantanément grâce à la recherche dynamique et au panneau latéral pré-intégré.</p>
+                    <p>Une interface épurée pensée pour l'efficacité. Trouvez, consultez et ouvrez vos fichiers instantanément grâce à la recherche dynamique et aux raccourcis clavier.</p>
                 </div>
                 <div class="card">
                     <h3>Autonomie et flexibilité</h3>
@@ -68,7 +68,7 @@
         <hr class="separator">
 
         <!-- Téléchargement de l'application -->
-        <section id="telechargement" class="download-section">
+        <section id="telechargement" class="download-section reveal">
             <h2>Téléchargement de l'application</h2>
             <p>Installez SoweDrop sur votre poste de travail pour commencer à organiser vos documents dès aujourd'hui.</p>
             
@@ -103,21 +103,21 @@
                     </div>
                     <ul>
                         <li><strong>Téléchargement :</strong> Téléchargez le fichier d'installation depuis notre site web officiel.</li>
-                        <li><strong>Installation :</strong> Double-cliquez sur le fichier pour lancer l'installation automatique sur votre système.</li>
+                        <li><strong>Installation :</strong> Double-cliquez sur le fichier .exe pour lancer l'installation automatique sur votre système.</li>
                         <li><strong>Ouverture :</strong> Lancez l'application SoweDrop. L'interface principale s'ouvre sur votre écran, prête à l'emploi.</li>
                     </ul>
                 </div>
 
                 <div class="guide-step">
-                    <h3>Étape 2 : Découverte du tableau de bord initial</h3>
+                    <h3>Étape 2 : Découverte du logiciel</h3>
                     <div class="guide-image-container">
                         <img src="blanc.png" alt="Capture d'écran - Tableau de bord initial" class="guide-screenshot">
                     </div>
-                    <p>Lorsque vous vous connectez pour la première fois, votre tableau de bord central est totalement vide. Dès l'ouverture, vous pouvez valider les fenêtres d'accueil avec la touche <b>Entrée</b> pour accéder pleinement à l'espace.</p>
+                    <p>Lorsque vous vous connectez pour la première fois, vous devrez vous inscrire. Une fois faite, votre tableau de bord central est totalement vide. Dès l'ouverture, vous pouvez valider les fenêtres d'accueil avec la touche <b>Entrée</b> pour accéder pleinement à l'espace.</p>
                 </div>
 
                 <div class="guide-step">
-                    <h3>Étape 4 : Prise en main des fonctionnalités clés</h3>
+                    <h3>Étape 3 : Prise en main des fonctionnalités clés</h3>
                     
                     <h4>A. Ajouter et supprimer un document</h4>
                     <div class="guide-image-container">
@@ -128,7 +128,7 @@
                         <li><strong>Supprimer un document :</strong> Sélectionnez une ligne dans votre tableau et demandez la suppression. Grâce à notre système de corbeille intégrée, le document est masqué de vos recherches mais reste protégé contre les fausses manipulations. <br>💡 <b>Raccourci clavier :</b> <kbd>Ctrl + D</kbd></li>
                     </ul>
 
-                    <h4>B. Rechercher efficacement avec la multicritères</h4>
+                    <h4>B. Rechercher efficacement avec la recherche avancée (multicritère)</h4>
                     <div class="guide-image-container">
                         <img src="filtre.png" alt="Capture d'écran - Barre de recherche multicritères" class="guide-screenshot">
                     </div>
@@ -144,7 +144,7 @@
 
                     <h4>C. Consulter et ouvrir un document</h4>
                     <div class="guide-image-container">
-                        <img src="menu.png".png" alt="Capture d'écran - Consultation et export" class="guide-screenshot">
+                        <img src="menu.png" alt="Capture d'écran - Consultation et export" class="guide-screenshot">
                     </div>
                     <p>Faites un simple clic sur un document dans le tableau pour interagir avec lui :</p>
                     <ul>
@@ -165,13 +165,14 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
+        <section id="contact" class="contact-section reveal">
             <h2>Contactez l'équipe SoweDrop</h2>
             <p>Une question ou un besoin d'assistance concernant l'application ? Notre équipe est à votre écoute.</p>
             <div class="contact-box">
                 <p><strong>Support Officiel :</strong> support@sowedrop.com</p>
-                <p><strong>Version de l'application :</strong> V1, 03/06/2026</p>
-                <p class="contact-note">Pour toute demande technique, merci de préciser la version de votre système Windows.</p>
+                <p><strong>Version de l'application :</strong> V1, 05/06/2026</p>
+                <p><strong>Développeurs :</strong> M. Mouniama, M. Amourani, Mme Bador et Mme Filaumart</p>
+                <p class="contact-note">Cette application a été développée dans le cadre d'un projet universitaire à l'IUT de La Réunion. Pour toute question ou suggestion, n'hésitez pas à nous contacter.</p>
             </div>
         </section>
 
@@ -180,5 +181,24 @@
     <footer>
         <p>&copy; 2026 SoweDrop - Page Officielle - Tous droits réservés</p>
     </footer>
+
+    <script>
+    const reveals = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+        reveals.forEach(section => {
+            const top = section.getBoundingClientRect().top;
+            const visible = window.innerHeight - 100;
+
+            if (top < visible) {
+                section.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+    </script>
+
 </body>
 </html>

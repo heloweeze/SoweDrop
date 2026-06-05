@@ -1,0 +1,13 @@
+idDoc: 7
+titre: Facture fournisseur exemple
+description: Fausse facture pour tester la recherche par categorie.
+auteur_nom: AMOURANI
+auteur_prenom: Fabien
+auteur_matricule: RT002
+date_document: 2026-04-11
+ressource: data/documents/local/facture_fournisseur_exemple.pdf
+type_fichier: PDF
+stockage: local
+statut: actif
+categories: Finance
+mots_cles: facture;fournisseur;urgent

@@ -1,0 +1,13 @@
+idDoc: 6
+titre: Compte rendu reunion equipe
+description: Compte rendu fictif de reunion de projet.
+auteur_nom: MOUNIAMA
+auteur_prenom: Lucas
+auteur_matricule: RT001
+date_document: 2026-04-10
+ressource: data/documents/partage/compte_rendu_reunion_equipe.docx
+type_fichier: DOCX
+stockage: partage
+statut: actif
+categories: Compte rendu;Projet
+mots_cles: reunion;equipe;decision
